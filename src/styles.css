@@ -1,0 +1,4 @@
+hr { margin: 40px; }
+
+.ltr { direction: rtl; }
+.align-center  { display: flex; justify-content: center; }

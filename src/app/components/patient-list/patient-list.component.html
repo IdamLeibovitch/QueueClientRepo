@@ -1,0 +1,18 @@
+<div class="ltr align-center">
+    <Table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">מספר תור</th>
+                <th scope="col">שם לקוח</th>
+                <th scope="col">שעת כניסה לתור</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let patient of patients">
+                <td>{{patient.id}}</td>
+                <td>{{patient.name}}</td>
+                <td>{{patient.createdAt | date:'mm:ss' }}</td>
+            </tr>
+        </tbody>
+    </Table>
+</div>

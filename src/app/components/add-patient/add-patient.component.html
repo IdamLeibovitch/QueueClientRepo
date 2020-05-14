@@ -1,0 +1,10 @@
+<div class="ltr align-center">
+    <form [formGroup]="patientForm" #formDir="ngForm" (ngSubmit)="onSubmit($event)">
+        <div class="form-group">
+            <label for="name">שם מטופל : </label>
+            <input id="name" class="form-control" formControlName="name" required>
+            <button type="submit" class="btn btn-default" [disabled]="patientForm.invalid">הכנס לתור</button>
+        </div>
+        <div>שם חייב להכיל לפחות 4 תווים.</div>
+    </form>
+</div>

@@ -1,0 +1,24 @@
+<div class="ltr align-center">
+    <button class="btn btn-default" (click)='OnBtnClick()' [disabled]='isButtonDisabled'>קרא להבא בתור</button>
+</div>
+<div class="ltr align-center">
+    <span>בשירות:</span>
+</div>
+<div class="ltr align-center">
+    <div class="ltr align-canter">
+        <Table class="table table-bordered">
+            <tbody>
+                <tr *ngIf='currentPatient'>
+                    <td>{{currentPatient.id}}</td>
+                    <td>{{currentPatient.name}}</td>
+                    <td>{{currentPatient.createdAt | date:'mm:ss' }}</td>
+                </tr>
+                <tr *ngIf='!currentPatient'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </Table>
+    </div>
+</div>
